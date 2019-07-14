@@ -6,7 +6,7 @@ class Menu:
     self.end_time = end_time
 
   def __repr__(self):
-    return 'The '+self.name+' is now being served between '+str(self.start_time)+' & '+str(self.end_time)
+    return self.name+' available between '+str(self.start_time)+' & '+str(self.end_time)
 
 brunch_items = {
   'pancakes': 7.50, 'waffles': 9.00, 'burger': 11.00,
