@@ -3,6 +3,9 @@ class Franchise:
         self.address = address
         self.menus = menus
 
+    def __repr__(self):
+      return self.address
+      
 class Menu:
   def __init__(self, name, items, start_time, end_time):
     self.name = name
