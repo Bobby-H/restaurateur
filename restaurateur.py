@@ -19,6 +19,12 @@ class Franchise:
   def __init__(self, address, menus):
     self.address = address
     self.menus = menus
+  def flagship_store(address, menus):
+    address = '1232 West End Road'
+    menus = (brunch_menu, early_bird_menu, dinner_menu, kids_menu)
+  def new_installment(address, menus):
+    address = '12 East Mulberry Street'
+    menus = (brunch_menu, early_bird_menu, dinner_menu, kids_menu)  
 
 brunch_items = {
   'pancakes': 7.50, 'waffles': 9.00, 'burger': 11.00,
