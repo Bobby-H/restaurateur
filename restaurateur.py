@@ -15,6 +15,11 @@ class Menu:
         bill += self.items[purchased_item]
     return bill
 
+class Franchise:
+  def __init__(self, address, menus):
+    self.address = address
+    self.menus = menus
+
 brunch_items = {
   'pancakes': 7.50, 'waffles': 9.00, 'burger': 11.00,
   'home fries': 4.50, 'coffee': 1.50, 'espresso': 3.00,
