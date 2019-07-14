@@ -1,3 +1,8 @@
+class Franchise:
+    def __init__(self, address, menus):
+        self.address = address
+        self.menus = menus
+
 class Menu:
   def __init__(self, name, items, start_time, end_time):
     self.name = name
@@ -15,17 +20,6 @@ class Menu:
         bill += self.items[purchased_item]
     return bill
 
-class Franchise:
-  def __init__(self, address, menus):
-    self.address = address
-    self.menus = menus
-  def flagship_store(address, menus):
-    address = '1232 West End Road'
-    menus = (brunch_menu, early_bird_menu, dinner_menu, kids_menu)
-  def new_installment(address, menus):
-    address = '12 East Mulberry Street'
-    menus = (brunch_menu, early_bird_menu, dinner_menu, kids_menu)  
-
 brunch_items = {
   'pancakes': 7.50, 'waffles': 9.00, 'burger': 11.00,
   'home fries': 4.50, 'coffee': 1.50, 'espresso': 3.00,
@@ -40,7 +34,17 @@ dinner_items = {
 kids_items = {
   'chicken nuggets': 6.50, 'fusilli with wild mushrooms': 12.00, 'apple juice': 3.00
 }
+
 brunch_menu = Menu('Brunch', brunch_items, 1100, 1600)
+
 early_bird_menu = Menu('Early Bird', early_bird_items, 1500, 1800)
+
 dinner_menu = Menu('Dinner', dinner_items, 1500, 1800)
+
 kids_menu = Menu('Kids Menu', kids_items, 1100, 2100)
+
+menus = [brunch_items, early_bird_items, dinner_items, kids_items]
+
+flagship_store = Franchise('1232 West End Road', menus)
+
+new_installment = Franchise('12 East Mulberry Street', menus)
